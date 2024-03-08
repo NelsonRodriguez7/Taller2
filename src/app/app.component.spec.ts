@@ -45,16 +45,16 @@ describe('AppComponent', () => {
     expect(app.multiples(15)).toEqual('fizzbuzz');
   });
 
-  it(`comprobar que devuelve un numero no multiple`, () => {
+  it(`comprobar que devuelve un numero no multiple 7`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.multiples(7)).toEqual(7);
   });
 
-  it(`comprobar que devuelve un numero no multiplo`, () => {
+  it(`comprobar que devuelve un numero no multiplo 11`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.multiples(3)).toEqual(9);
+    expect(app.multiples(11)).toEqual(11);
   });
 
 
