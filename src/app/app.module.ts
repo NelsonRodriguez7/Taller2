@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 
 import { CuentasComponent } from './pages/cuentas/cuentas.component';
 import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
+import { FormularioComponent } from './pages/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.
     LoginComponent,
    
     CuentasComponent,
-        BarraLateralComponent
+        BarraLateralComponent,
+        FormularioComponent
   ],
   imports: [
     BrowserModule,

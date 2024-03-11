@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class BarraLateralComponent {
   @Input() isLogin?: boolean;
-  @Input() ruta?: string;
+ 
   
 }

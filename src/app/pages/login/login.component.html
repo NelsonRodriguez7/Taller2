@@ -2,44 +2,7 @@
     <div class="lg_flexbox">
      <app-barra-lateral [isLogin]="false" ></app-barra-lateral> 
 
-      <div class="lg_lado_b">
-        <div class="lg_flex">
-          <h2 class="lg_titulo_sesion">
-            Inicio de
-            <p>sesión</p>
-          </h2>
-          <form class="lg_flex" id="formulario_ini">
-            <input
-              type="email"
-              placeholder="Ingresa tu correo electronico"
-              class="lg_input"
-              id="form_email"
-            />
-            <div class="input-wrapper">
-            <input
-              type="password"
-              placeholder="Ingresa tu clave de internet"
-              class="lg_input"
-              id="form_pass"
-            />
-            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-              <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-            </svg>
-            </div>
-            <p class="lg_problemas">
-              ¿Tienes problemas con tu cuenta?<a href="#"> Recuperar contraseña</a>
-            </p>
-          </form>
-          <input
-            type="submit"
-            class="lg_btn_iniciar"
-            value="Iniciar sesion"
-            onclick="validarEmail()"
-          />
-          <!-- <p id="mensaje"></p> -->
-        </div>
-      </div>
+      <app-formulario></app-formulario>
     </div>
     <script src="./login/app.js"></script>
  

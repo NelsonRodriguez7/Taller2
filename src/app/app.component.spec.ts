@@ -57,8 +57,29 @@ describe('AppComponent', () => {
     expect(app.multiples(11)).toEqual(11);
   });
 
+  it(`comprobar que es un anagrama`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('cara','arc a')).toEqual(true);
+  });
 
+  it(`comprobar que no es un anagrama`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('cara','cara   ')).toEqual('Las cadenas son exactamente iguales, no pueden ser un anagrama');
+  });
 
+  it(`comprobar que es un numero primo`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.primo(3)).toEqual(true);
+  });
+
+  it(`comprobar que es un fibonacci y itera hasta el numero ingresado`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.fibonacci(5)).toEqual(true);
+  });
 
  
 });
